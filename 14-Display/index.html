@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .in > div {
+            display: inline;
+        }
+        .blo > span {
+            display: block;
+        }
+
+        /* Ex -2 */
+        .box {
+            background-color: lightblue;
+            padding: 10px;
+            margin: 10px;
+            border: 2px solid blue;
+        }
+
+        .inline {
+            display: inline;
+            width: 150px;     /* ignored */
+            height: 80px;     /* ignored */
+            background-color: lightcoral;
+        }
+
+        .inline-block {
+            display: inline-block;
+            width: 150px;     /* works */
+            height: 80px;     /* works */
+            background-color: lightgreen;
+        }
+
+        .block {
+            display: block;
+            width: 150px;     /* works */
+            height: 80px;     /* works */
+            background-color: lightskyblue;
+        }
+    </style>
+</head>
+<body>
+    <section class="in">
+        <div>Hello</div>
+        <div>World</div>
+    </section>
+
+    <section class="blo">
+        <span>Hello</span>
+        <span>World</span>
+    </section>
+
+    <hr>
+    <!-- Ex - 2 -->
+    <hr>
+
+    <h2>display: inline</h2>
+    <span class="box inline">Inline</span>
+    <span class="box inline">Inline</span>
+
+    <h2>display: inline-block</h2>
+    <span class="box inline-block">Inline-block</span>
+    <span class="box inline-block">Inline-block</span>
+
+    <h2>display: block</h2>
+    <span class="box block">Block</span>
+    <span class="box block">Block</span>
+    
+</body>
+</html>
