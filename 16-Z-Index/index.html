@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            position: relative;
+        }
+        div {
+            position: absolute;
+            height: 150px;
+            width: 150px;
+        }
+        #d1 {
+            background-color: lightcoral;
+        }
+        #d2 {
+            background-color: lightcyan;
+            z-index: 1;
+        }
+        #d3 {
+            background-color: lightgoldenrodyellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div id="d1">1</div>
+        <div id="d2">2</div>
+        <div id="d3">3</div>
+    </div>
+</body>
+</html>
